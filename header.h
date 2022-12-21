@@ -3,7 +3,7 @@
 
 using namespace std;
 
-enum type { SUNNY, CLOUDY, RAINY, FOGGY, STORM, WINDY, SNOWY };
+enum TheTypeOfWeatherInTheCity { SUNNY, CLOUDY, RAINY, FOGGY, STORM, WINDY, SNOWY };
 
 void find_max_temprature(string);
 
@@ -127,7 +127,7 @@ public:
         *yp = temp;
     }
 
-    void BubbleSort(int size)
+    void bubble_sort(int size)
     {
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - i - 1; j++) {
@@ -138,7 +138,7 @@ public:
         }
     }
 
-    void Print(int i) {
+    void print_city_data(int i) {
         cout << "Day " << list[i].get_date() << endl;
         cout << "City " << list[i].get_city() << endl;
         cout << "Country " << list[i].get_country() << endl;
